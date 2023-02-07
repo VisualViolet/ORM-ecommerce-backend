@@ -19,6 +19,8 @@ No installation is necessary. This will not be a deployed application, but a wal
 
 This application is designed to be used as an inventory management system. You can view, add, update, and delete products, categories, and tags. Each of these actions has a designated route which is currently being accessed through Insomnia. Simply go to the correct URL, write a JSON body if needed, and send the request. To start the app, run the command "npm server.js" or "nodemon" if you installed that package. New students and developers may find it helpful to view the code to see how packages are implemented and work together to create this application. Code has been commented to describe functionality.
 
+![insomnia demo](https://github.com/VisualViolet/ORM-ecommerce-backend/blob/main/public/assets/images/eommerce-insomnia-demo.gif)
+
 ## Credits
 
 ### Packages
@@ -43,3 +45,7 @@ This application is designed to be used as an inventory management system. You c
 <hr>
 
 -- **Insomnia**: https://insomnia.rest/
+
+## License
+
+MIT License Copyright (c) 2023 VisualViolet
