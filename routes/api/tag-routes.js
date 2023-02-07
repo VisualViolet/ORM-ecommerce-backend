@@ -1,8 +1,7 @@
 const router = require('express').Router();
 const { Tag, Product, ProductTag } = require('../../models');
 
-// The `/api/tags` endpoint
-
+// Return all tags
 router.get('/', (req, res) => {
   Tag.findAll({
     include:{
@@ -18,6 +17,7 @@ router.get('/', (req, res) => {
   })
 });
 
+// Return a single tag by id
 router.get('/:id', (req, res) => {
   Tag.findByPk(req.params.id, {
     include:{
@@ -40,6 +40,7 @@ router.get('/:id', (req, res) => {
   })
 });
 
+// Add a tag
 router.post('/', (req, res) => {
   Tag.create({
     tag_name:req.body.tag_name
@@ -54,6 +55,7 @@ router.post('/', (req, res) => {
   })
 });
 
+// Update a tag by id
 router.put('/:id', (req, res) => {
   Tag.update(req.body, {
     where:{
@@ -74,6 +76,7 @@ router.put('/:id', (req, res) => {
   })
 });
 
+// Delete a tag by id
 router.delete('/:id', (req, res) => {
   Tag.destroy({
     where:{

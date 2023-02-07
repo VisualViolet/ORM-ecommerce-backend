@@ -1,3 +1,4 @@
+// Run these seed files using "npm run seed" in the console
 const { Category } = require('../models');
 
 const categoryData = [

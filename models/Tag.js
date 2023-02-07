@@ -1,3 +1,4 @@
+// Required packages
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
@@ -6,6 +7,7 @@ class Tag extends Model {}
 
 Tag.init(
   {
+    // define id and tag_name columns
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
